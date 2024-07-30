@@ -154,7 +154,6 @@ class MeasurementModel extends ChangeNotifier
     var sdnnConfidence = (finalResults.getResult(VitalSignTypes.sdnn) as VitalSignSdnn?)?.confidence!.level.name;
     var meanRRiConfidence = (finalResults.getResult(VitalSignTypes.meanRri) as VitalSignMeanRri?)?.confidence!.level.name;
     var prqConfidence = (finalResults.getResult(VitalSignTypes.prq) as VitalSignPrq?)?.confidence!.level.name;
-    print("<<<<<<<<<");
     if(isStopped){
       finalResultsString = null;
       confidenceLevels = null;
@@ -213,9 +212,6 @@ class MeasurementModel extends ChangeNotifier
   void onLicenseInfo(LicenseInfo licenseInfo) {
     LicenseOfflineMeasurements? offlineMeasurements = licenseInfo.offlineMeasurements;
     if (offlineMeasurements != null) {
-      print("Offline Measurements: ${offlineMeasurements.totalMeasurements}");
-      print("Remaining Offline Measurements: ${offlineMeasurements.remainingMeasurements}");
-      print("Offline Measurements End Time: ${offlineMeasurements.measurementEndTimestamp}");
     }
   }
 

@@ -5,8 +5,7 @@ class WidgetSize extends StatefulWidget {
   final Widget child;
   final Function onChange;
 
-  const WidgetSize({Key? key, required this.onChange, required this.child})
-      : super(key: key);
+  const WidgetSize({super.key, required this.onChange, required this.child});
 
   @override
   State<WidgetSize> createState() => _WidgetSizeState();

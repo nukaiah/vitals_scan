@@ -1,8 +1,8 @@
 
 
 class ConfigurationModel{
-  String sex;
-  double age;
-  double weight;
+  final String sex;
+  final double age;
+  final double weight;
   ConfigurationModel({required this.sex,required this.age,required this.weight});
 }

@@ -17,7 +17,7 @@ Color bgClr1 =  const Color(0xFFFFFFFF);
 class MeasurementScreen extends StatefulWidget {
   ConfigurationModel configurationModel;
 
-  MeasurementScreen({Key? key,required this.configurationModel}) : super(key: key);
+  MeasurementScreen({super.key,required this.configurationModel});
 
   @override
   State<MeasurementScreen> createState() => _MeasurementScreenState();
@@ -76,17 +76,17 @@ class _MeasurementScreenState extends State<MeasurementScreen> {
                 color: bgClr1
               ),
             ),
-            body: SafeArea(
+            body: const SafeArea(
               child: Column(children: [
                 Expanded(
                     child: Stack(children: [
-                  const _CameraPreview(),
+                  _CameraPreview(),
                   SizedBox(
                     width: double.infinity,
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.end,
                         crossAxisAlignment: CrossAxisAlignment.center,
-                        children: const [
+                        children: [
                           _ImageValidity(),
                           _StartStopButton(),
                         ]),
@@ -130,7 +130,7 @@ class _MeasurementScreenState extends State<MeasurementScreen> {
 }
 
 class _CameraPreview extends StatefulWidget {
-  const _CameraPreview({Key? key}) : super(key: key);
+  const _CameraPreview();
 
   @override
   _CameraPreviewState createState() => _CameraPreviewState();
@@ -170,7 +170,7 @@ class _CameraPreviewState extends State<_CameraPreview> {
 class _FaceDetectionView extends StatefulWidget {
   final Size? size;
 
-  const _FaceDetectionView({Key? key, required this.size}) : super(key: key);
+  const _FaceDetectionView({required this.size});
 
   @override
   State<_FaceDetectionView> createState() => _FaceDetectionViewState();
@@ -209,7 +209,7 @@ class _FaceDetectionViewState extends State<_FaceDetectionView> {
 }
 
 class _StartStopButton extends StatefulWidget {
-  const _StartStopButton({Key? key}) : super(key: key);
+  const _StartStopButton();
 
   @override
   State<_StartStopButton> createState() => _StartStopButtonState();
@@ -245,7 +245,7 @@ class _StartStopButtonState extends State<_StartStopButton> {
                           ),
                         ),
                         Text(
-                          "${mesCtrl.seconds < 10 ? "${"0${mesCtrl.seconds}"}" : mesCtrl.seconds} \nsec",
+                          "${mesCtrl.seconds < 10 ? "0${mesCtrl.seconds}" : mesCtrl.seconds} \nsec",
                         ),
                       ],
                     )
@@ -267,7 +267,7 @@ class _StartStopButtonState extends State<_StartStopButton> {
 }
 
 class _ImageValidity extends StatefulWidget {
-  const _ImageValidity({Key? key}) : super(key: key);
+  const _ImageValidity();
 
   @override
   State<_ImageValidity> createState() => _ImageValidityState();
