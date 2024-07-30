@@ -1,0 +1,10 @@
+# This is a generated file; do not edit or check into version control.
+biosensesignal_flutter_sdk=/Users/YalagalaSrinivas/vitals_scan/BiosenseSignal_Flutter_SDK_5.5.1/
+fluttertoast=/Users/YalagalaSrinivas/.pub-cache/hosted/pub.dev/fluttertoast-8.2.6/
+permission_handler=/Users/YalagalaSrinivas/.pub-cache/hosted/pub.dev/permission_handler-10.4.5/
+permission_handler_android=/Users/YalagalaSrinivas/.pub-cache/hosted/pub.dev/permission_handler_android-10.3.6/
+permission_handler_apple=/Users/YalagalaSrinivas/.pub-cache/hosted/pub.dev/permission_handler_apple-9.1.4/
+permission_handler_windows=/Users/YalagalaSrinivas/.pub-cache/hosted/pub.dev/permission_handler_windows-0.1.3/
+wakelock=/Users/YalagalaSrinivas/.pub-cache/hosted/pub.dev/wakelock-0.6.2/
+wakelock_macos=/Users/YalagalaSrinivas/.pub-cache/hosted/pub.dev/wakelock_macos-0.4.0/
+wakelock_web=/Users/YalagalaSrinivas/.pub-cache/hosted/pub.dev/wakelock_web-0.4.0/
